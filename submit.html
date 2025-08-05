@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DocAdvisor | Submit Entry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>DocAdvisor</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="feed.html">Journal Feed</a>
+      <a href="submit.html">Submit Entry</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Submit Your Restaurant Journal Entry</h2>
+    <form id="entry-form">
+      <label for="restaurant">Restaurant Name:</label>
+      <input type="text" id="restaurant" name="restaurant" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="">--Select--</option>
+        <option>⭐☆☆☆☆</option>
+        <option>⭐⭐☆☆☆</option>
+        <option>⭐⭐⭐☆☆</option>
+        <option>⭐⭐⭐⭐☆</option>
+        <option>⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="journal">Journal Entry:</label>
+      <textarea id="journal" name="journal" rows="6" required></textarea>
+
+      <label for="photo">Upload a photo (optional):</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+
+      <button type="submit" class="btn">Submit Entry</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DocAdvisor</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
